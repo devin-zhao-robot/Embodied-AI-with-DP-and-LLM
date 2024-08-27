@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embodied-AI-with-DP-and-LLM</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <h1>Embodied-AI-with-DP-and-LLM</h1>
+    <h2>Devin Zhao</h2>
+    <p>Abstract</p>
+    <p>TThe development of large language model (LLM)
+        and visual language model(VLM) has driven rapid progress
+        in embodied artificial intelligence (Embodied AI) technology,
+        opening up new avenues for robots to interact with the
+        physical world and providing vast space for robots to perform
+        more complex manipulation tasks. Traditional robot trajectory
+        planning and control methods are sensitive to disturbances and
+        have strict hardware requirements, making them difficult to
+        apply in precise robot manipulation tasks. The diffusion policy
+        does not rely on the robot dynamics model and can elegantly
+        handle multimodal action distributions, it’s suitable for high-
+        dimensional action spaces, and exhibits impressive training
+        stability, making it highly suitable for robot precise control
+        task. However, the diffusion policy cannot interact with the
+        physical world and is difficult to guarantee the generalization
+        for different task scenarios. To address these issues, this article
+        proposes an Embodied AI scheme based on the LLM and the
+        diffusion policy. This solution firstly converts human natural
+        language instructions into robot manipulation subtasks by
+        LLM and then generates robot actions based on the diffusion
+        policy. The combination of LLM and diffusion policy addresses
+        the existing problems in robot manipulation tasks, this method
+        not only inherits the advantages of efficient and stable diffusion
+        models, but also realizes the interaction between robots and the
+        physical world, and has strong generalization to different tasks.
+        To validate our idea, we conducted simulation experiments on a
+        7 dof Franka Emika Panda using Isaac Sim. The experimental
+        results show that compared to previous embodied intelligence
+        schemes, the scheme designed in this paper greatly improves
+        the success rate and safety of task execution. In addition,
+        this scheme has strong generalization ability for different task
+        scenarios.</p>
+    <img src="data/sim_pic.jpg" alt="Franka_pic_1" width="600">
+    <video width="600" controls>
+        <source src="data/Screencast.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
