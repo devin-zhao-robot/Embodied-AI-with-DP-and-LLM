@@ -250,35 +250,35 @@
                         </figcaption>
                     </a>
                 </div>
-                <p> In table II, the UI represents unknown instructions,
-                    while SA and UA represent scene attributes that have
-                    been seen or unseen. Our model performs well on
-                    different instructions and scene attributes. The classification success rates are shown in Table 2.
-                    The experimental results show that our model has good
-                    generalization for all scenarios. For long-term planning
-                    tasks, the high success rate is mainly due to the model’s
-                    trajectory combination ability. For example, for the
-                    block stacking task, our model first breaks it down into
-                    multiple simple subtasks and then executes each subtask
-                    sequentially to reduce the difficulty of the task. For
-                    simple spatial combination tasks, thanks to the language
-                    instruction mapping behavior of LLM, a high success rate
-                    can be maintained regardless of whether the scene objects
-                    change. Whether fuzzy instruction tasks are completed
-                    depends on the language understanding ability of the
-                    large model and the model’s degree of cognition of
-                    scene objects. Therefore, when the scene prior is lost,
-                    its success rate will be significantly reduced. Comparing
-                    spatial combination tasks with abstract semantic tasks,
-                    we found that using LLM to map natural language into
-                    a ”language” that the robot can understand, such as the
-                    environment state si , is more flexible and generalized
-                    than directly defining language behavior instructions. </p>
             </div>
             <br>
             <br>
-            <p> (2)：Real-time Planning for Dynamic Target </p>
+            <p> In table II, the UI represents unknown instructions,
+                while SA and UA represent scene attributes that have
+                been seen or unseen. Our model performs well on
+                different instructions and scene attributes. The classification success rates are shown in Table 2.
+                The experimental results show that our model has good
+                generalization for all scenarios. For long-term planning
+                tasks, the high success rate is mainly due to the model’s
+                trajectory combination ability. For example, for the
+                block stacking task, our model first breaks it down into
+                multiple simple subtasks and then executes each subtask
+                sequentially to reduce the difficulty of the task. For
+                simple spatial combination tasks, thanks to the language
+                instruction mapping behavior of LLM, a high success rate
+                can be maintained regardless of whether the scene objects
+                change. Whether fuzzy instruction tasks are completed
+                depends on the language understanding ability of the
+                large model and the model’s degree of cognition of
+                scene objects. Therefore, when the scene prior is lost,
+                its success rate will be significantly reduced. Comparing
+                spatial combination tasks with abstract semantic tasks,
+                we found that using LLM to map natural language into
+                a ”language” that the robot can understand, such as the
+                environment state si , is more flexible and generalized
+                than directly defining language behavior instructions. </p>
             <br>
+            
             <hr class="section-divider">
             <h4><strong>C: 长周期任务论证，多子任务组合 主要针对长周期的自然指令进行功能性验证。</strong></h4>
             <br>
