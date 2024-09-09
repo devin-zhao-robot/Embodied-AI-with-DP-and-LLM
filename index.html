@@ -214,7 +214,7 @@
                             <figure>
                                 <img src="data/3.jpg" class="img-responsive">
                             </figure>
-                            <figcaption>Task scenario and trajectory visualization.
+                            <figcaption>Task scenario and trajectory visualization
                             </figcaption>
                         </a>
                     </div>
@@ -242,37 +242,40 @@
             <br>
             <div style="width: 100%; margin: 0 auto">
                 <div style="width: 25%; float: left; text-align:center; margin: 0 auto">
-                    <a src="data/method0.jpg" target="_blank">
+                    <a src="data/4.jpg" target="_blank">
                         <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
+                            <img src="data/4.jpg" class="img-responsive">
                         </figure>
+                        <figcaption>The success rate of 3 types of tasks
+                        </figcaption>
                     </a>
                 </div>
-                <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                    <a src="data/method0.jpg" target="_blank">
-                        <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
-                        </figure>
-                    </a>
-                </div>
-                <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                    <a src="data/method0.jpg" target="_blank">
-                        <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
-                        </figure>
-                    </a>
-                </div>
-                <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                    <a src="data/method0.jpg" target="_blank">
-                        <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
-                        </figure>
-                    </a>
-                </div>
+                <p> In table II, the UI represents unknown instructions,
+                    while SA and UA represent scene attributes that have
+                    been seen or unseen. Our model performs well on
+                    different instructions and scene attributes. The classification success rates are shown in Table 2.
+                    The experimental results show that our model has good
+                    generalization for all scenarios. For long-term planning
+                    tasks, the high success rate is mainly due to the model’s
+                    trajectory combination ability. For example, for the
+                    block stacking task, our model first breaks it down into
+                    multiple simple subtasks and then executes each subtask
+                    sequentially to reduce the difficulty of the task. For
+                    simple spatial combination tasks, thanks to the language
+                    instruction mapping behavior of LLM, a high success rate
+                    can be maintained regardless of whether the scene objects
+                    change. Whether fuzzy instruction tasks are completed
+                    depends on the language understanding ability of the
+                    large model and the model’s degree of cognition of
+                    scene objects. Therefore, when the scene prior is lost,
+                    its success rate will be significantly reduced. Comparing
+                    spatial combination tasks with abstract semantic tasks,
+                    we found that using LLM to map natural language into
+                    a ”language” that the robot can understand, such as the
+                    environment state si , is more flexible and generalized
+                    than directly defining language behavior instructions. </p>
             </div>
             <br>
-            <figcaption>(1)：能够根据自然语言指令正确拆解任务，并正确调用相应函数、
-            </figcaption>
             <br>
             <p> (2)：Real-time Planning for Dynamic Target </p>
             <br>
