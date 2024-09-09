@@ -203,45 +203,30 @@
         <div class="row">
             <div class="col-md-12">
                 <h3 ><strong><font size="+3">Experiments</font></strong></h3>
-                <h4><strong>A:算法的有效性, 科学性验证</strong></h4>
+                <h4><strong>A:Efficient Analysis for Manipulation Tasks</strong></h4>
                 <!-- Training -->
                 <br>
                 <!-- <h4 class="text-center"><strong>Training on Diverse Tasks</strong></h4> -->
                 <br>
                 <div style="width: 100%; margin: 0 auto">
-                    <div style="width: 25%; float: left; text-align:center; margin: 0 auto">
+                    <div style="width: 70%; float: left; text-align:center; margin: 0 auto">
                         <a src="data/method0.jpg" target="_blank">
                             <figure>
-                                <img src="data/method0.jpg" class="img-responsive">
-                            </figure>
-                        </a>
-                    </div>
-                    <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                        <a src="data/method0.jpg" target="_blank">
-                            <figure>
-                                <img src="data/method0.jpg" class="img-responsive">
-                            </figure>
-                        </a>
-                    </div>
-                    <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                        <a src="data/method0.jpg" target="_blank">
-                            <figure>
-                                <img src="data/method0.jpg" class="img-responsive">
-                            </figure>
-                        </a>
-                    </div>
-                    <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                        <a src="data/method0.jpg" target="_blank">
-                            <figure>
-                                <img src="data/method0.jpg" class="img-responsive">
+                                <img src="data/3.jpg" class="img-responsive">
                             </figure>
                         </a>
                     </div>
                 </div>
-                <figcaption>(1)：能够根据自然语言指令正确拆解任务，并正确调用相应函数、
+                <figcaption>(1)：Task scenario and trajectory visualization.
                 </figcaption>
                 <br>
-                <p> (2)：能够完整准确完成测试集（与训练数据相似） </p>
+                <p> We designed a series of manipulation tasks in the
+                    simulation environment to verify whether the proposed
+                    algorithm can accurately plan complete and feasible
+                    trajectories for known or similar tasks during the training
+                    process. We demonstrate three representative tasks as
+                    shown in Figure 3, which visualizes the scene information
+                    and the trajectory data of the planned terminal effector. </p>
             </div>
         </div>
 
@@ -250,7 +235,7 @@
         <div class="row col-md-12">
 
             <!--  -->
-            <h4><strong>B:泛化性论证 主要是在训练过程中未知的任务场景以及子任务场景， 按照具体的语言指令，例如抓取那个块放到哪里等等，实现未知场景泛化性验证。</strong></h4>
+            <h4><strong>B: Generalization to Complex Task</strong></h4>
             <br>
 
             <!-- <h4 class="text-center"><strong>New Scenes</strong></h4> -->
@@ -289,7 +274,7 @@
             <figcaption>(1)：能够根据自然语言指令正确拆解任务，并正确调用相应函数、
             </figcaption>
             <br>
-            <p> (2)：能够完整准确完成测试集（与训练数据相似） </p>
+            <p> (2)：Real-time Planning for Dynamic Target </p>
             <br>
             <hr class="section-divider">
             <h4><strong>C: 长周期任务论证，多子任务组合 主要针对长周期的自然指令进行功能性验证。</strong></h4>
@@ -347,9 +332,9 @@
             </div>
             <hr class="section-divider">
             <p>
-                This paper has presented a universal Embodied Arti-
+                This paper has presented a universal Embodied Arti
                 ficial Intelligence scheme for robot manipulation tasks,
-                which combines the generation ability of large lan-
+                which combines the generation ability of large lan
                 guage model and the stable advantages of diffusion
                 policy to generate robot actions. This scheme improves
                 the flexibility of robot action generation, enhances the
