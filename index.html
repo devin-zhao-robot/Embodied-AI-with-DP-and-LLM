@@ -252,7 +252,6 @@
                 </div>
             </div>
             <br>
-            <div>
             <p> In table II, the UI represents unknown instructions,
                 while SA and UA represent scene attributes that have
                 been seen or unseen. Our model performs well on
@@ -277,44 +276,42 @@
                 a ”language” that the robot can understand, such as the
                 environment state si , is more flexible and generalized
                 than directly defining language behavior instructions. </p>
-            <div>
 
             <hr class="section-divider">
-            <h4><strong>C: 长周期任务论证，多子任务组合 主要针对长周期的自然指令进行功能性验证。</strong></h4>
+            <h4><strong>C: Real-time Planning for Dynamic Target</strong></h4>
             <br>
             <div style="width: 100%; margin: 0 auto">
-                <div style="width: 25%; float: left; text-align:center; margin: 0 auto">
+                <div style="width: 70%; float: left; text-align:center; margin: 0 auto">
                     <a src="data/method0.jpg" target="_blank">
                         <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
-                        </figure>
-                    </a>
-                </div>
-                <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                    <a src="data/method0.jpg" target="_blank">
-                        <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
-                        </figure>
-                    </a>
-                </div>
-                <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                    <a src="data/method0.jpg" target="_blank">
-                        <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
-                        </figure>
-                    </a>
-                </div>
-                <div style="width: 25%; float: right; text-align:center; margin: 0 auto">
-                    <a src="data/method0.jpg" target="_blank">
-                        <figure>
-                            <img src="data/method0.jpg" class="img-responsive">
+                            <img src="data/3.jpg" class="img-responsive">
                         </figure>
                     </a>
                 </div>
             </div>
             <br>
             <p>
-                We see that Embodied-AI-with-DP-and-LLM generalizes XXXXXXX
+                We verify the real-time trajectory plan
+                ning capability of our model by introducing displacement
+                properties in the scene, that is, changing the scene
+                from static to dynamic. Compared with the traditional
+                control model, the diffusion model naturally has the
+                properties of observation-movement, re-observation-re-
+                movement, that is, its behavior at time t+1 is only
+                determined by the state observation and action at time t,
+                which makes trajectory error correction and re-planning
+                possible. We conducted experiments on the three types
+                of tasks described in A:Task scenario and trajectory visualization. We set a speed
+                attribute for the target object of the task so that it can
+                move forward at a certain speed in a random direction,
+                ensuring that the target position attribute queried by
+                LLM keeps changing. The planned trajectory is shown in
+                Figure above. By observing the trajectory, it is not difficult to
+                find that when the target position changes significantly,
+                the generated trajectory will change in curvature, which
+                triggers the trajectory correction of the model. Therefore,
+                our model has a strong re-planning ability and is more
+                robust to small disturbances in the scene.
             </p>
 
             <div class="row">
