@@ -43,18 +43,6 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="nav nav-pills nav-justified">
-                    <li>
-                        <a src="data/1.jpg" target="_blank">
-                        <image src="data/1.jpg" height="160px">
-                            <!-- <h4><strong>Paper</strong></h4> -->
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
         <br>
 
@@ -91,11 +79,18 @@
                     7 dof Franka Emika Panda using Isaac Sim. The experimental
                     results show the correctness and generalization of our method.
                 </p>
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a src="data/1.jpg" target="_blank">
+                        <image src="data/1.jpg" height="130px">
+                            <!-- <h4><strong>Paper</strong></h4> -->
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-
         <br>
-
+        
         <h3 class="col-md-12 text-center"><strong>Video</strong></h3>
 
         <!-- <p style="text-align:center; width: 80%; margin: 0 auto">
@@ -168,7 +163,7 @@
                     The implementation process of our Embodied AI scheme is shown in Algorithm 1.
                 </p>
                 <div style="width: 70%; margin: 0 auto">
-                    <div style="width: 40%; float: left; text-align:center; margin: 0 auto">
+                    <div style="width: 35%; float: left; text-align:center; margin: 0 auto">
                         <!-- <a src="data/method0.jpg" target="_blank"> -->
                             <figure>
                                 <img src="data/2.jpg" class="img-responsive">
@@ -176,10 +171,10 @@
                         </a>
                         <!-- <figcaption>XXXXXX</figcaption> -->
                     </div>
-                    <div style="width: 40%; float: right; text-align:center; margin: 0 auto">
+                    <div style="width: 50%; float: right; text-align:center; margin: 0 auto">
                         <!-- <a src="data/method1.png" target="_blank"> -->
                             <figure>
-                                <img src="data/2.png" class="img-responsive">
+                                <img src="data/alg2.png" class="img-responsive">
                             </figure>
                         </a>
                         <!-- <figcaption>XXXXXXX</figcaption> -->
@@ -189,27 +184,20 @@
                 <br>
                 <br>
                 <br>
-                <p class = "text-center">In Algorithm 1, based on the environmental informa-
-                    tion collected by the RGB-D depth camera, LLM is first
-                    used to decompose human natural language instructions
-                    into several sub-tasks that can be executed by robots
-                    according to the designed prompt template. Then, a
-                    dataset combined states with actions is obtained in
-                    NVIDIA Isaac Sim. Based on this dataset, a diffusion
-                    model is trained to approximate the trajectory distri-
-                    bution. Then, based on the diffusion model, a reverse
-                    denoising process is carried out, ultimately obtaining the
-                    robot trajectory action..</p>
 
-                <br>
-                <!-- <figcaption> <b>Left:</b>XXXXXXXXXXX
-                </figcaption> -->
-                <br>
-                <!-- We leverage a single VLM for both queries based on RT-2 that encapsulate the broad prior knowledge in internet-scale data at each level of the action hierarchy. -->
-                <!-- <figcaption><b>Right:</b> XXXXXXXXXXX
-                </figcaption> -->
             </div>
         </div>
+        <p>In Algorithm 1, based on the environmental informa-
+            tion collected by the RGB-D depth camera, LLM is first
+            used to decompose human natural language instructions
+            into several sub-tasks that can be executed by robots
+            according to the designed prompt template. Then, a
+            dataset combined states with actions is obtained in
+            NVIDIA Isaac Sim. Based on this dataset, a diffusion
+            model is trained to approximate the trajectory distri-
+            bution. Then, based on the diffusion model, a reverse
+            denoising process is carried out, ultimately obtaining the
+            robot trajectory action..</p>
 
         <div class="row">
             <div class="col-md-12">
@@ -302,7 +290,7 @@
             <br>
             <p> (2)：能够完整准确完成测试集（与训练数据相似） </p>
             <br>
-
+            <hr class="section-divider">
             <h4><strong>C: 长周期任务论证，多子任务组合 主要针对长周期的自然指令进行功能性验证。</strong></h4>
             <br>
             <div style="width: 100%; margin: 0 auto">
@@ -339,6 +327,24 @@
             <p>
                 We see that Embodied-AI-with-DP-and-LLM generalizes XXXXXXX
             </p>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 ><strong><font size="+3">Prompts</font></strong></h3>
+                    <h4><font size="+1">Prompts in Real-World Environments:</font></h4>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="data/planner_prompts.txt"><font size="+1">Planner</font></a> | 
+                            <a href="data/composer_prompts.txt"><font size="+1">Composer</font></a> |
+                            <!-- <a href="data/planner_prompts.txt"><font size="+1">Planner</font></a> | -->
+                            <!-- <a href="https://research.google/people/tianli-ding/">Tianli Ding</a><sup>1</sup>,  -->
+        
+                        </li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+            <hr class="section-divider">
             <p>
                 This paper has presented a universal Embodied Arti-
                 ficial Intelligence scheme for robot manipulation tasks,
